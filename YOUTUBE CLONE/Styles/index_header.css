@@ -1,0 +1,233 @@
+.header {
+    position: fixed;
+    display: flex;
+    height: 55px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.mic-button:hover,.mic-button2:hover,.search-button:hover,.search-button2:hover,.upload-button:hover,.notification-button:hover {
+    background-color: rgb(235, 235, 235);
+}
+
+.hamburger:hover{
+    background-color: rgb(235, 235, 235);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.mic-button:active,.mic-button2:active,.search-button:active,.search-button2:active,.upload-button:active,.notification-button:active{
+    background-color: rgb(215,215,215);
+}
+
+.hamburger:active{
+    background-color: rgb(215,215,215);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.hamburger {
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.youtube-logo {
+    height: 24px;
+    cursor: pointer;
+}
+
+.middle {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    flex-grow: 1;
+    max-width: 670px;
+}
+
+.search-bar {
+    font-family: 'Roboto', Arial;
+    font-size: 16px;
+    height: 40px;
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding-left: 16px;
+    border-radius: 50px 0 0 50px;
+}
+
+.search-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    width: 65px;
+    border: 1px solid #ccc;
+    border-radius: 0 50px 50px 0;
+    cursor: pointer;
+    margin-right: 25px;
+}
+
+.search-button img {
+    height: 26px;
+    width: 26px;
+}
+
+
+.right {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+@media (min-width: 750px) {
+    .search-button2 {
+        width: 0;
+        visibility: hidden;
+    }
+
+    .search-button2 img {
+        width: 0;
+        visibility: hidden;
+    }
+
+    .mic-button2 {
+        width: 0;
+        visibility: hidden;
+    }
+
+    .mic-button2 img {
+        width: 0;
+        visibility: hidden;
+    }
+
+    .mic-button {
+        align-items: center;
+        height: 40px;
+        width: 40px;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .mic-button img {
+        height: 26px;
+        width: 26px;
+    }
+
+    .left {
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 750px) {
+    .search-bar {
+        width: 0;
+        padding-left: 0;
+        visibility: hidden;
+    }
+
+    .search-button {
+        width: 0;
+        visibility: hidden;
+    }
+
+    .mic-button {
+        width: 0;
+        visibility: hidden;
+    }
+
+    .mic-button img {
+        width: 0;
+        visibility: hidden;
+    }
+
+    .search-button2 {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        background-color: white;
+        align-items: center;
+        border: none;
+    }
+
+    .search-button2 img {
+        height: 26px;
+        width: 26px;
+    }
+
+    .mic-button2 {
+        align-items: center;
+        height: 40px;
+        width: 40px;
+        background-color: white;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .mic-button2 img {
+        height: 26px;
+        width: 26px;
+    }
+}
+
+.upload-button {
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.upload-button img {
+    height: 26px;
+    width: 26px;
+}
+
+.notification-button {
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.notification-button img {
+    height: 26px;
+    width: 26px;
+}
+
+.profile-button {
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.profile-button img {
+    height: 26px;
+    width: 26px;
+}

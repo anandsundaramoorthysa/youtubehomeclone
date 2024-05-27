@@ -1,0 +1,86 @@
+.floating-suggestion-container {
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+
+.floating-suggestion-bar {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.floating-suggestion {
+    padding: 8px 12px;
+    background-color: #f1f1f1;
+    font-weight: 450;
+    border-radius: 10px;
+    margin: 0 5px;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.floating-suggestion:hover {
+    background-color: #ddd;
+}
+
+.floating-suggestion-bar::-webkit-scrollbar {
+    display: none; 
+}
+
+.floating-home{
+    background-color: black;
+    color: white;
+}
+
+.left-arrow, .right-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden; 
+    z-index: 1;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+.left-arrow::before, .right-arrow::before {
+    content: '';
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+}
+
+.left-arrow::before {
+    transform: rotate(135deg);
+}
+
+.right-arrow::before {
+    transform: rotate(-45deg);
+}
+
+.floating-container:hover .left-arrow,
+.floating-container:hover .right-arrow {
+    visibility: visible; 
+}
