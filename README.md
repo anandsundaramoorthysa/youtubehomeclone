@@ -46,7 +46,7 @@ Contributions are welcome!
 - Fork the repository and submit a pull request to add features or fix issues.  
 
 ## License  
-This project is licensed under the [MIT License](LICENSE).  
+This project is licensed under the [MIT License](https://github.com/anandsundaramoorthysa/youtubehomeclone/blob/main/LICENSE.txt).  
 
 ## Contact Me  
 For inquiries or feedback about the **YouTube Home Clone Project**, feel free to reach out:  
